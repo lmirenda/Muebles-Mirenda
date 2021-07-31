@@ -1,0 +1,20 @@
+.bannerimage {
+    width: 100%;
+    background-image: url(../../images/banner.jpg);
+    height: 405px;
+    background-position: center;
+    position: relative;
+    text-align: center;
+
+  }
+
+  .bannertext {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 5rem;
+    color: $ghost-white;
+    text-shadow: 0 0 3px $rich-black, 0 0 5px $rich-black;
+
+  }

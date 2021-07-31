@@ -1,0 +1,60 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: $ghost-white;
+    text-decoration: none;
+}
+
+.LogIn {
+    padding: 9px 15px;
+    background-color: $paradise-pink;
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+    &:hover {
+        background-color: $ghost-white;
+        color: $paradise-pink;
+        
+    }
+}
+
+.Register {
+    padding: 9px 15px;
+    background-color: $rich-black ;
+    border: 1px solid $paradise-pink;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+    margin-right: 20px;
+    color: $paradise-pink;
+    margin-left: 20px;
+
+    &:hover {
+        color: $ghost-white;
+        border: 1px solid none;
+        background-color:$paradise-pink;
+    }
+
+}
+
+
+.SubBtn {
+    padding: 9px 15px;
+    background-color: $paradise-pink;
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 0px;
+    &:hover {
+        background-color: $ghost-white;
+        color: $paradise-pink;
+        
+    }
+}
