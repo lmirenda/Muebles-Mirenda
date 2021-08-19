@@ -13,3 +13,12 @@ header {
     height: 10px;
     background-color: $rich-black;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20%;
+        
+    }
+}

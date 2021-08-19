@@ -1,0 +1,173 @@
+.register-body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: $rich-black;
+    background: linear-gradient($rich-black, darken($rich-black, 15%));
+
+    
+    
+    .container {
+        max-width: 700px;
+        width: 100%;
+        background-color: $ghost-white;
+        padding: 25px 30px;
+        border-radius: 5px;
+
+        .title{
+            font-size: 25px;
+            font-weight: 50;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                height: 3px;
+                width: 30px;
+                background-color: $paradise-pink;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        form {
+            .user-details {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 20px 0 12px 0;
+                @media (max-width: 584px) {
+                    max-height: 300px;
+                    overflow-y: scroll;
+                    &::-webkit-scrollbar{
+                        width: 0;
+                    }
+                }
+
+                .input-box {
+                    width: calc(100%/2 - 20px);
+                    margin-bottom: 15px;
+
+                    @media (max-width: 584px) {
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+                   
+                    .details {
+                        font-weight: 500;
+                        margin-bottom: 5px;
+                        display: block;
+                    }
+
+                    input {
+                        height: 45px;
+                        width: 100%;
+                        outline: none;
+                        border-radius: 5px;
+                        border: 1px solid #ccc;
+                        padding-left: 15px;
+                        font-size: 1rem;
+                        border-bottom-width: 2px;
+                        transition: all 0.3s ease;
+
+                        &:focus{
+
+                            border-color:$paradise-pink;
+                            &:valid {
+                               
+                            }
+
+                        }
+
+                        
+                    }
+                }
+            }
+            .gender-details {
+                .gender-title  {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                .category {
+                    display: flex;
+                    width: 80%;
+                    justify-content: space-between;
+                    margin: 14px 0;
+
+                    @media (max-width: 584px) {
+                        width: 100%;
+                    }
+
+                    label {
+                        display: flex;
+                        align-items: center;
+
+                    }
+
+                    .dot {
+                        height: 18px;
+                        width: 18px;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        background: #d9d9d9;
+                        border: 5px solid transparent;
+                        transition: all 0.3s ease;
+                    }
+
+                }
+            }
+        }
+    }
+
+    #dot-1:checked ~ .category label .one{
+        border-color: #d9d9d9;
+        background-color: $paradise-pink;
+    }
+    #dot-2:checked ~ .category label .two{
+        border-color: #d9d9d9;
+        background-color: $paradise-pink;
+    }
+    #dot-3:checked ~ .category label .three{
+        border-color: #d9d9d9;
+        background-color: $paradise-pink;
+    }
+
+    form {
+        input[type="radio"]{
+            display: none;
+        }
+
+        .button {
+            height: 45px;
+            margin: 45px 0;
+
+            input{
+                height: 100%;
+                width: 100%;
+                outline: none;
+                color: $ghost-white;
+                border: none;
+                border-radius: 5px;
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                background: linear-gradient($paradise-pink, darken($paradise-pink,5%));
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background: linear-gradient(darken($paradise-pink,5%), $paradise-pink);
+                }
+
+            }
+        }
+        @media (max-width: 584px) {
+        max-width: 100%;
+        margin: 0 5%;
+    }
+    }
+    @media (max-width: 584px) {
+        max-width: 100%;
+        margin: 5% 5%;
+    }
+}

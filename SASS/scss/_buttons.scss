@@ -58,3 +58,13 @@ button {
         
     }
 }
+
+@media screen and (max-width: 768px) {
+   .Register {
+       margin-right: 50px;
+  }
+
+  .LogIn {
+      margin-left: 50px;
+  }
+}
