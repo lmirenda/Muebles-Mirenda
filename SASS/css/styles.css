@@ -889,6 +889,7 @@ nav {
   outline: none;
   font-size: 16px;
   border: none;
+  padding-left: 15px;
 }
 .login-body .container form .input-box input[type=submit] {
   font-size: 17px;
@@ -971,6 +972,102 @@ nav {
 .login-body .container form .input-box input:valid ~ .underline:after {
   transform: scaleX(1);
   transform-origin: center;
+}
+
+.proyectos-body .p-container {
+  margin: 10% 20% 10% 20%;
+}
+@media (max-width: 1080px) {
+  .proyectos-body .p-container {
+    margin: 10% 20% 10% 10%;
+  }
+}
+.proyectos-body .row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+  flex-wrap: auto;
+}
+@media (max-width: 1080px) {
+  .proyectos-body .row {
+    flex-direction: column;
+  }
+}
+.proyectos-body .col {
+  flex-basis: 45%;
+}
+@media (max-width: 780px) {
+  .proyectos-body .col {
+    flex-direction: row;
+  }
+}
+.proyectos-body h1 {
+  color: #24262b;
+  font-size: 80px;
+}
+.proyectos-body p {
+  color: #24262b;
+  font-size: 11px;
+  line-height: 15px;
+}
+.proyectos-body .explorar {
+  padding: 9px 15px;
+  background-color: #ea526f;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 0px;
+  margin-top: 30px;
+}
+.proyectos-body .explorar:hover {
+  background-color: #f7f7ff;
+  color: #ea526f;
+}
+.proyectos-body .card {
+  color: #24262b;
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s;
+}
+@media (max-width: 780px) {
+  .proyectos-body .card {
+    margin-left: 7.5%;
+    width: 300px;
+    height: 360px;
+  }
+}
+.proyectos-body .card:hover {
+  transform: translateY(-10px);
+}
+.proyectos-body .card p {
+  color: #24262b;
+  text-shadow: 0 0 5px #f7f7ff;
+  font-size: 0.5rem;
+}
+.proyectos-body .card-1 {
+  background-image: url(../../images/proyecto-1.jpg);
+}
+.proyectos-body .card-2 {
+  background-image: url(../../images/proyecto-2.jpg);
+}
+.proyectos-body .card-3 {
+  background-image: url(../../images/proyecto-3.jpg);
+}
+.proyectos-body .card-4 {
+  background-image: url(../../images/proyecto-4.jpg);
+}
+.proyectos-body h5 {
+  color: #ea526f;
+  text-shadow: 0 0 5px #ccc;
 }
 
 /*# sourceMappingURL=styles.css.map */
