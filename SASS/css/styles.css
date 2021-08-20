@@ -844,4 +844,133 @@ nav {
   }
 }
 
+.login-body {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(90deg, #ea526f, #f07f95);
+  place-items: center;
+}
+.login-body .container {
+  background: #f7f7ff;
+  max-width: 350px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+.login-body .container form .button {
+  margin: 40px 0 20px 0;
+}
+.login-body .container form .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: relative;
+}
+.login-body .container form .title:before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 33px;
+  bottom: 3px;
+  left: 0;
+  background: #ea526f;
+}
+.login-body .container form .input-box {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+}
+.login-body .container form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+}
+.login-body .container form .input-box input[type=submit] {
+  font-size: 17px;
+  color: #f7f7ff;
+  background: linear-gradient(0deg, #ea526f, #f07f95);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.login-body .container form .input-box input[type=submit]:hover {
+  background: linear-gradient(180deg, #ea526f, #f07f95);
+  letter-spacing: 1px;
+}
+.login-body .container form .underline::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+}
+.login-body .container form .underline::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #ea526f;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: all 0.3s ease;
+}
+.login-body .container .option {
+  font-size: 14px;
+  text-align: center;
+}
+.login-body .container .twitter a {
+  display: block;
+  width: 100%;
+  height: 45px;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 20px;
+  color: #fff;
+  background: linear-gradient(to left, #00acee, #1abeff 100%);
+  margin: 20px 0 15px 0;
+  line-height: 45px;
+  border-radius: 5px;
+}
+.login-body .container .twitter a:hover {
+  background: linear-gradient(to right, #00acee, #1abeff 100%);
+}
+.login-body .container .twitter i {
+  padding-right: 20px;
+  font-size: 20px;
+}
+.login-body .container .facebook a {
+  display: block;
+  width: 100%;
+  height: 45px;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 20px;
+  color: #fff;
+  background: linear-gradient(to left, #3b5998, #476bb8 100%);
+  margin: 50px 0 15px 0;
+  line-height: 45px;
+  border-radius: 5px;
+}
+.login-body .container .facebook a:hover {
+  background: linear-gradient(to right, #3b5998, #476bb8 100%);
+}
+.login-body .container .facebook i {
+  padding-right: 20px;
+  font-size: 20px;
+}
+.login-body .container form .input-box input:focus ~ .underline:after,
+.login-body .container form .input-box input:valid ~ .underline:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
